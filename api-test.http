@@ -1,0 +1,31 @@
+### 获取成员列表
+POST http://127.0.0.1:33001/api/memberManage/getMemberList
+Content-Type: application/json
+secret: xxxxxxxxxx
+
+
+
+### 获取成员详细信息
+POST http://127.0.0.1:33001/api/memberManage/getMemberInfo
+Content-Type: application/json
+
+{
+    "urlParam": "m7hrEU"
+}
+
+
+
+### 确认加入
+POST http://127.0.0.1:33001/api/memberManage/confirmJoin
+Content-Type: application/json
+
+{
+    "uuid": "ee9c3ebd-6272-1d7c-bffa-2307a49e7f66"
+}
+
+
+
+### 重置所有人的确认状态
+POST http://127.0.0.1:33001/api/memberManage/resetState
+Content-Type: application/json
+secret: xxxxxxxxxx
