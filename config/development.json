@@ -1,0 +1,9 @@
+{
+    "serverConfig": {
+        "host": "0.0.0.0",
+        "port": 33001
+    },
+    "sysParams": {
+        "secret": ""
+    }
+}
