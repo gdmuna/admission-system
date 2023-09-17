@@ -8,6 +8,7 @@
 
 ```shell
 npm install
+# if you use yarn, you just execute 'yarn'
 ```
 
 - Start it.
