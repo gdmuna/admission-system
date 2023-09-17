@@ -11,6 +11,8 @@ npm install
 # if you use yarn, you just execute 'yarn'
 ```
 
+- Add `db-sqlite.db` in current program path
+
 - Start it.
 
 ```shell
