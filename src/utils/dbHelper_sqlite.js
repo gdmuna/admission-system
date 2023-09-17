@@ -17,3 +17,14 @@ exports.select = async (sql, sqlParams) => {
         return err;
     }
 }
+
+// 封装 UPDATE 操作
+exports.update = async (sql, sqlParams) => {
+    try {
+        const stmt = db_file.prepare(sql);
+        const result = sqlParams ? stmt.run(sqlParams) : stmt.run();
+        return result;
+    } catch (err) {
+        return err;
+    }
+}
