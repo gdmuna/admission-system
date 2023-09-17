@@ -5,8 +5,10 @@ exports.getMemberList = async () => {
     const sql = `
         SELECT
             org,
+            department,
             stu_id AS stuId,
             stu_name AS stuName,
+            url_param AS urlParam,
             admission_status AS admissionStatus
         FROM
             member_list
@@ -20,6 +22,8 @@ exports.getMemberInfo = async (urlParam) => {
         SELECT
             stu_id AS stuId,
             stu_name AS stuName,
+            org,
+            department,
             admission_status AS admissionStatus,
             uuid
         FROM
